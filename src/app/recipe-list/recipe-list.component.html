@@ -1,0 +1,17 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-4" *ngFor="let recipe of recipes">
+      <div class="card my-3 shadow-lg" style="width: 16rem;">
+          <img [src]=" 'assets/recipes/'+ recipe.imageUrl " class="card-img-top" style="height: 150px;" alt="">
+          <div class="card-body">
+              <h5 class="card-title text-center"> {{recipe.title}} </h5>
+              <p class="text-muted text-center fs-6"> {{recipe.title}} </p>
+              <div class="d-flex justify-content-between">
+                  <span class="text-muted"> {{recipe.prepTime}} min </span>
+                  <span class="text-muted"> {{recipe.cookTime}} min</span>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
